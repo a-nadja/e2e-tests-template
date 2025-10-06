@@ -1,0 +1,22 @@
+{
+  "name": "e2e-tests-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-nadja/e2e-tests-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-nadja/e2e-tests-template/issues"
+  },
+  "homepage": "https://github.com/a-nadja/e2e-tests-template#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0"
+  }
+}
