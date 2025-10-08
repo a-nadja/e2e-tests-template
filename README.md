@@ -4,9 +4,13 @@
 
 [![E2E Tests](https://github.com/a-nadja/e2e-tests-template/actions/workflows/playwright.yml/badge.svg)](https://github.com/a-nadja/e2e-tests-template/actions/workflows/playwright.yml)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+![Node](https://img.shields.io/badge/node-22.20.0-green)
+![npm](https://img.shields.io/badge/npm-11.6.1-red)
 ![Playwright](https://img.shields.io/badge/playwright-1.56.0-45ba4b)
 ![TypeScript](https://img.shields.io/badge/typescript-5.0+-3178c6)
-![License](https://img.shields.io/badge/license-MIT-green)
+
 
 **An educational template for production-ready E2E test automation**
 
