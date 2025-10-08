@@ -1,7 +1,15 @@
 {
   "name": "e2e-tests-template",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=11.0.0"
+  },
+  "volta": {
+    "node": "22.20.0",
+    "npm": "11.6.1"
+  },
+  "description": "Educational template for production-ready E2E test automation",
   "main": "index.js",
   "scripts": {},
   "repository": {
