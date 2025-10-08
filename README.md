@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![E2E Tests](https://github.com/a-nadja/e2e-tests-template/actions/workflows/playwright.yml/badge.svg)](https://github.com/a-nadja/e2e-tests-template/actions/workflows/playwright.yml)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Playwright](https://img.shields.io/badge/playwright-1.56.0-45ba4b)
 ![TypeScript](https://img.shields.io/badge/typescript-5.0+-3178c6)
