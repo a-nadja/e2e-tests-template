@@ -1,16 +1,47 @@
 import { defineConfig, devices } from '@playwright/test';
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
+ * Playwright Configuration
+ *
+ * Using Playwright's built-in "projects" feature to manage multiple services.
+ * Each service gets its own project configuration with isolated test directory and base URL.
+ *
+ * Run specific service: npx playwright test --project=saucedemo-*
+ * Run all services: npx playwright test
  */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
+// Service configurations
+const services = {
+  saucedemo: {
+    testDir: './tests/saucedemo',
+    baseURL: 'https://www.saucedemo.com',
+  },
+  // Add more services here as needed
+  // service2: {
+  //   testDir: './tests/service2',
+  //   baseURL: 'https://example.com',
+  // },
+};
+
+// Browser configurations
+const browsers = [
+  { name: 'chromium', device: devices['Desktop Chrome'] },
+  { name: 'firefox', device: devices['Desktop Firefox'] },
+  { name: 'webkit', device: devices['Desktop Safari'] },
+];
+
+// Generate projects for each service × browser combination
+const projects = Object.entries(services).flatMap(([serviceName, serviceConfig]) =>
+  browsers.map((browser) => ({
+    name: `${serviceName}-${browser.name}`,
+    testDir: serviceConfig.testDir,
+    use: {
+      ...browser.device,
+      baseURL: serviceConfig.baseURL,
+    },
+  }))
+);
+
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -30,50 +61,25 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    /* Screenshot on failure */
+    screenshot: 'only-on-failure',
+
+    /* Video on failure */
+    video: 'retain-on-failure',
+
+    /* Timeout for each action */
+    actionTimeout: 10000,
   },
 
-  /* Configure projects for major browsers */
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+  /* Timeout for each test */
+  timeout: 30000,
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+  /* Expect timeout */
+  expect: {
+    timeout: 5000,
+  },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
-  ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+  /* Projects generated from services × browsers */
+  projects,
 });

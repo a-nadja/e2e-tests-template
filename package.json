@@ -11,7 +11,14 @@
   },
   "description": "Educational template for production-ready E2E test automation",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:saucedemo": "playwright test --project=saucedemo-*",
+    "test:saucedemo:chromium": "playwright test --project=saucedemo-chromium",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/a-nadja/e2e-tests-template.git"

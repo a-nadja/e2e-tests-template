@@ -40,12 +40,13 @@ Most automation examples focus on test syntax. This project is different — it 
 **Phase 1: Foundation** _(In Progress)_
 - [x] Project concept and structure
 - [x] LinkedIn documentation series started
-- [ ] Initial test suite (coming this week)
+- [x] Modular architecture with Playwright Projects
+- [x] Initial smoke tests for SauceDemo
 - [ ] Page Object Model implementation
 - [ ] CI/CD pipeline setup
 - [ ] Code quality tools (ESLint, Prettier)
 
-**Next:** Building core test suite with real-world examples
+**Next:** Building Page Object Model with comprehensive test suite
 
 ---
 
@@ -62,11 +63,15 @@ npm install
 # Install Playwright browsers
 npx playwright install
 
-# Run tests
+# Run all tests
 npm test
-```
 
-_Note: Full documentation will be added as features are implemented._
+# Run specific service tests
+npm run test:saucedemo
+
+# Run tests in UI mode (recommended for development)
+npm run test:ui
+```
 
 ---
 
@@ -80,7 +85,8 @@ This repository is being built step-by-step, with each milestone documented on L
 | Oct 2025 | Environment & Tools Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7378876285525094400-TbOU?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Why Playwright? | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7381066367086510081-Z8-v?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Foundation & Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-testautomation-activity-7381988060210565121-AScC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
-| Coming | Page Object Model | - | 🔄 In Progress |
+| Oct 2025 | Modular Test Architecture | - | 🔄 In Progress |
+| Coming | Page Object Model | - | 📋 Planned |
 | Planned | CI/CD Pipeline Setup | - | 📋 Planned |
 | Planned | Linting & Code Quality | - | 📋 Planned |
 | Planned | Advanced Test Patterns | - | 📋 Planned |
@@ -121,16 +127,15 @@ Think of it as **"Create React App" but for test automation**.
 
 ```
 e2e-tests-template/
-├── tests/              # Test files
-├── pages/              # Page Object Models
-├── fixtures/           # Test fixtures and data
-├── helpers/            # Utility functions
-├── .github/            # CI/CD workflows
-├── playwright.config.ts
+├── tests/
+│   └── saucedemo/          # SauceDemo service tests
+├── .github/workflows/      # CI/CD
+├── playwright.config.ts    # Playwright Projects config
+├── tsconfig.json           # TypeScript configuration
 └── package.json
 ```
 
-_Detailed structure documentation will be added as implementation progresses._
+_Additional folders (pages, fixtures) and services will be added as needed._
 
 ---
 
