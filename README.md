@@ -14,7 +14,7 @@
 
 **An educational template for production-ready E2E test automation**
 
-[LinkedIn Posts](https://www.linkedin.com/in/ageeva-nadja/) • [Report Bug](../../issues) • [Request Feature](../../issues)
+[LinkedIn Posts](https://www.linkedin.com/search/results/all/?keywords=%23e2e_tests_template) • [Report Bug](../../issues) • [Request Feature](../../issues)
 
 </div>
 
@@ -31,7 +31,7 @@ Most automation examples focus on test syntax. This project is different — it 
 - 📚 **Educational approach** — every decision explained
 - 🚀 **Modern stack** — Playwright, TypeScript, GitHub Actions
 
-> **Following along?** This project is built incrementally. Each major feature corresponds to a [LinkedIn post](https://www.linkedin.com/in/ageeva-nadja/) explaining the reasoning behind implementation decisions.
+> **Following along?** This project is built incrementally. Each major feature corresponds to a [LinkedIn post](https://www.linkedin.com/search/results/all/?keywords=%23e2e_tests_template) explaining the reasoning behind implementation decisions.
 
 ---
 
@@ -85,8 +85,8 @@ This repository is being built step-by-step, with each milestone documented on L
 | Oct 2025 | Environment & Tools Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7378876285525094400-TbOU?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Why Playwright? | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7381066367086510081-Z8-v?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Foundation & Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-testautomation-activity-7381988060210565121-AScC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
-| Oct 2025 | Modular Test Architecture | - | 🔄 In Progress |
-| Coming | Page Object Model | - | 📋 Planned |
+| Oct 2025 | Modular Test Architecture | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7382496259644854272-Xv6f?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
+| Coming | Page Object Model | - | 🔄 In Progress |
 | Planned | CI/CD Pipeline Setup | - | 📋 Planned |
 | Planned | Linting & Code Quality | - | 📋 Planned |
 | Planned | Advanced Test Patterns | - | 📋 Planned |
