@@ -79,6 +79,7 @@ This repository is being built step-by-step, with each milestone documented on L
 | Sep 2025 | Project Introduction | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_qaautomation-playwright-cicd-activity-7378350301327749121-Fpsf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Environment & Tools Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7378876285525094400-TbOU?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Oct 2025 | Why Playwright? | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-playwright-activity-7381066367086510081-Z8-v?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
+| Oct 2025 | Foundation & Setup | [🔗 View](https://www.linkedin.com/posts/ageeva-nadja_e2eabrtestsabrtemplate-qaautomation-testautomation-activity-7381988060210565121-AScC?utm_source=share&utm_medium=member_desktop&rcm=ACoAACv37cIB1LMDZh1gVc3qjYOmQc_7DYawg-o) | ✅ Published |
 | Coming | Page Object Model | - | 🔄 In Progress |
 | Planned | CI/CD Pipeline Setup | - | 📋 Planned |
 | Planned | Linting & Code Quality | - | 📋 Planned |
